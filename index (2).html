@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dinna's Website</title>
 	<style>
 	    body {
@@ -20,13 +21,20 @@
 	    }
 
 		img {
-		width: 200px;
-		height: 200px;
-		border-radius: 50%;
-		object-fit: cover;
-		border: 4px solid #e1306c;
-		margin: 20px auto;
-		display:block;
+    	width: 150px;
+    	height: 150px;
+    	border-radius: 50%;
+    	object-fit: cover;
+    	border: 4px solid #e1306c;
+    	margin: 20px auto;
+    	display: block;
+	    /* --- TAMBAHKAN BARIS INI --- */
+	    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek pegas/membal */
+		}	
+
+		/* Efek saat foto disentuh mouse */
+		img:hover {
+	    transform: translateY(-10px); /* Fotonya lompat ke atas 10 pixel */
 		}
 
 	    p {
@@ -36,17 +44,49 @@
 		text-indent: 30px;
 	    }
 
-	    button {
-		background-color: #e1306c;
-		color: white;
-		border: none;
-		padding: 12px 24px;
-		font-size: 16px;
-		border-radius: 8px;
-		cursor: pointer;
-		display: block;
-		margin: 20px auto;
-	    }
+		button {
+    	background-color: #e1306c;
+    	color: white;
+    	border: none;
+    	padding: 12px 24px;
+    	font-size: 16px;
+    	border-radius: 8px;
+    	cursor: pointer;
+    	display: block;
+    	margin: 20px auto;
+    	/* --- TAMBAHKAN BARIS INI --- */
+    	transition: all 0.3s ease; /* Biar efek perubahannya halus, gak kaget */
+		}
+
+		/* Efek saat tombol disentuh mouse */
+		button:hover {
+    	transform: scale(1.1); /* Tombol membesar 10% */
+    	background-color: #b81d50; /* Warnanya berubah agak gelap */
+    	box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4); /* Efek lampu glow pink di bawah tombol */
+		}
+
+		@media screen and (max-width:600px) {
+			body {
+				padding: 20px; /* jarak pinggir kecil biar ga smpit
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			p {
+				font-size: 15px;
+				line-height: 1.6
+				text-indent: 20px
+			}
+
+			img {
+				width: 120px
+				height: 120px
+			}
+			
+		}
+	    
 	</style>
 </head>
 <body>
@@ -56,7 +96,7 @@
 		style="text-align: center;">
 		<img src="pfp.jpg" alt="Dinna">
 	</div>
-	<p>Halooo nama saya Dinna Hanifa, akrab dipanggil Dinna atau Din. Saya lahir pada tanggal 27 October tahun 2008 di Praya, Lombok Tengah. Saya merupakan mahasiswa aktif di  Universitas Mataram prodi Sarjana Teknik Informatika. Saya memiliki ketertarikan yang besar pada bidang matematika, dan teknologi. Saya merupakan alumni SMA IT PUTRI ABU HURAIRAH MATARAM, SMP IT PUTRI ABU HURAIRAH MATARAM dan SDN 4 PRAYA. Pada tahun 2019, saya pernah berpartisipasi mewakili provinsi Nusa Tenggara Barat dalam Olimpiade Sains Nasional (OSN) di Yogyakarta.</p>
+	<p>Halooo nama saya Dinna Hanifa, akrab dipanggil Dinna atau Din. Saya lahir pada tanggal 27 October tahun 2008 di Praya, Lombok Tengah. Saya merupakan mahasiswa aktif di Universitas Mataram prodi Sarjana Teknik Informatika. Saya memiliki ketertarikan yang besar pada bidang matematika, dan teknologi. Saya merupakan alumni SMA IT PUTRI ABU HURAIRAH MATARAM, SMP IT PUTRI ABU HURAIRAH MATARAM dan SDN 4 PRAYA.</p>
 	<p>Perkembangan terhadap sains saya berhenti sejenak kala memasuki bangku SMP di pondok pesantren. Tidak ingin berhenti disitu, di tahun 2025, saya mulai berpartisipasi Kembali dalam Olimpiade Sains Nasional dan Olimpiade Bahasa Arab tingkat kota Mataram. Selain aktif di bidang akademik, saya juga berpartisipasi dalam organisasi OSIS INTI sebagai Wakil Ketua Divisi Kebersihan di Ponpes Putri Abu Hurairah Mataram periode 2025/2026. Walaupun skill computer saya tidak banyak atau bisa dibilang sangat minim alias gaptek, saya memiliki ketertarikan yang besar terhadap ilmu IT, saya bercita cita menjadi ahli komputer. Maka dari itu, saya memilih untuk mendaftar jalur SNBP di Universitas Mataram  prodi Teknik Informatika sebagai perjalanan menuju mimpi saya.</p>
 	<p>Saya akan membuktikan kepada kedua orang tua saya, guru-guru saya, teman-teman saya, dan semua orang yang ada di dunia ini bahwa saya bisa meraih mimpi saya dengan tekad dan usaha yang kuat dan sungguh sungguh. Saya yakin, saya bisa melewati segala tantangan yang ada, segala kekecewaan yang sudah disiapkan, dan segala kemenangan yang ditakdirkan.</p>
 
